@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* ===== BOTH SIDE ===== */
+
+.whiteText{
+    color:#FFFFFF
+}
+
+.container{
+    background-image: url("../bg-intro-desktop.png");
+    background-size: cover;
+	background-position: center;
+    background-color: hsl(0, 100%, 74%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonText{
+    margin: 20px 0px;
+}
+
+/* ===== RIGHT SIDE ===== */
+
+.right{
+    width: 540px;
+    background-color: #FFFFFF;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 165px;
+}
+
+#TryIt{
+    width: 540px;
+    background-color: #5D54A3;
+    border-radius: 0.9vh;
+    border-color: none;
+    border-width: 0px;
+}
+
+#dollar{
+    color :#A59FD1;
+}
+
+#FreeTrial{
+    width: 460px;
+    background-color: #87D3B1;
+    border-radius: 0.9vh;
+    border-color: none;
+    border-width: 0px;
+    padding:0px;
+}
+
+input{
+    display: flex;
+    justify-items: space-between;
+}
+
+/* ===== LEFT SIDE ===== */
+
+.left{
+    margin-left: 165px;
+
+}
+h1{
+    font-family: "Poppins";
+    font-size: 52px;
+    margin-bottom: 25px;
+    line-height: 55px;
+    /* margin: 295px 148px 25px 164px; */
+}
+
+#leftP{
+    margin-right: 65px;
+}

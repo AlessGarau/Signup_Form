@@ -7,36 +7,31 @@
 // - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`).
 //  The message for this error should say *"Looks like this is not an email"*
 
-function getValue(input){
-    value = document.getElementById(input).value
+
+function isEmpty() {
+  const firstNameInput = document.getElementById("FirstName");
+  const lastNameInput = document.getElementById("LastName");
+  const emailAddressInput = document.getElementById("EmailAddress");
+  const passwordInput = document.getElementById("Password");
+
+  if (firstNameInput.value === "" || lastNameInput.value === "" || emailAddressInput.value === "" || passwordInput.value === "") {
+    alert("Veuillez remplir tous les champs.");
+    return false;
+  }
+  else {
+    console.log('yessir')
+    return true;
+  }
 }
 
-// let FirstName = getValue("First Name")
-// let LastName = getValue("Last Name")
-// let EmailAddress = getValue("Email Address")
-// let Password = getValue("Password")
-
-function verifyEmpty(variable){
-    if(!variable){
-        console.log(variable)
-    } else{
-        alert(variable.name, "Champ vide")
-    }
-}
-let FirstName = document.getElementById("FirstName")
-let LastName = document.getElementById("LastName")
-let EmailAddress = document.getElementById("EmailAddress")
-let Password = document.getElementById("Password")
-
-let inputArray = [FirstName, LastName, EmailAddress, Password]
-
-let allInputs = document.querySelectorAll("input")
-
-let freeTrial = document.getElementById("FreeTrial")
+let freeTrial = document.getElementById('FreeTrial')
 
 freeTrial.addEventListener('click', () => {
-
-    inputArray.forEach(input => 
-        verifyEmpty(input.value)
-        )
+  isEmpty()
 })
+
+//changer remplir tous les champs et detecter quel champs ne sont pas remplit
+//check le format de l'email
+//faire le css
+
+
