@@ -24,10 +24,18 @@ function isEmpty() {
   }
 }
 
+function validateEmail(email) {
+  // Expression régulière pour vérifier si l'email est valide
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  return regex.test(email) //return true/false
+}
+
 let freeTrial = document.getElementById('FreeTrial')
 
 freeTrial.addEventListener('click', () => {
+  const emailAddress = document.getElementById("EmailAddress").value
   isEmpty()
+  validateEmail(emailAddress)
 })
 
 //changer remplir tous les champs et detecter quel champs ne sont pas remplit
