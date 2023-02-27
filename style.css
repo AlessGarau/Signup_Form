@@ -38,7 +38,7 @@ body{
     height: 474px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 2vh;
@@ -81,8 +81,12 @@ input::placeholder {
     padding: 32px;
 }
 
+.wrongInput{
+    border-color: red;
+}
+
 #FirstName{
-    margin-top: 5vh;
+    margin-top: 5.5vh;
 }
 #agree{
     color: #B8B7BF;
