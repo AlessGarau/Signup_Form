@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* ===== BOTH SIDE ===== */
-
+body{
+    margin : 0px;
+}
 .whiteText {
     color: #FFFFFF
 }
@@ -15,6 +17,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-family: "Poppins";
 }
 
 .buttonText {
@@ -26,7 +29,8 @@
 .right {
     display: flex;
     flex-direction: column;
-    margin: 121px 165px 121px 0px;
+    /* margin: 121px 165px 121px 0px; */
+    margin: 14vh 13vw 14vh 0vh
 }
 
 #whiteSquare {
@@ -47,6 +51,7 @@
     border-radius: 0.9vh;
     border-color: none;
     border-width: 0px;
+    margin-top: 30px;
 }
 
 #dollar {
@@ -55,7 +60,7 @@
 
 #FreeTrial {
     width: 460px;
-    background-color: #87D3B1;
+    background-color: #5fb490;
     border-radius: 0.9vh;
     border-color: none;
     border-width: 0px;
@@ -76,6 +81,19 @@ input::placeholder {
     padding: 32px;
 }
 
+#FirstName{
+    margin-top: 5vh;
+}
+#agree{
+    color: #B8B7BF;
+    font-size: 11px;
+    margin : 0px 0px 45px 0px;
+}
+
+#terms{
+    color: #E59196;
+
+}
 /* ===== LEFT SIDE ===== */
 
 .left {
@@ -84,7 +102,6 @@ input::placeholder {
 }
 
 h1 {
-    font-family: "Poppins";
     font-size: 52px;
     margin-bottom: 25px;
     line-height: 55px;

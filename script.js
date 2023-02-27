@@ -32,6 +32,6 @@ freeTrial.addEventListener('click', () => {
 
 //changer remplir tous les champs et detecter quel champs ne sont pas remplit
 //check le format de l'email
-//faire le css
+//faire ajustement css
 
 
