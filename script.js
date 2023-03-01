@@ -14,16 +14,19 @@ function isEmpty(array) {
       input.placeholder = `${input.name} cannot be empty`
     } else {
       input.classList.remove("wrongInput")
-      return true;
     }
   })
-
 }
 
 function validateEmail(email) {
   // Expression régulière pour vérifier si l'email est valide
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-  return regex.test(email) //return true
+  if(!regex.test(email.value)){
+    email.placeholder = "Looks like this is not an email"
+    email.classList.add("wrongInput")
+  } else {
+    console.log("c bon")
+  }
 }
 
 const firstNameInput = document.getElementById("FirstName");
@@ -36,11 +39,12 @@ let inputArray = [firstNameInput, lastNameInput, lastNameInput, emailAddressInpu
 let freeTrial = document.getElementById('FreeTrial')
 
 freeTrial.addEventListener('click', () => {
-  const emailAddress = document.getElementById("EmailAddress").value
+  const emailAddress = document.getElementById("EmailAddress")
   isEmpty(inputArray)
   validateEmail(emailAddress)
 })
 
-//faire ajustement css
+// cacher le password (peut etre afficher)
+
 
 
